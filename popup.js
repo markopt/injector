@@ -1,8 +1,10 @@
-document.addEventListener('load', function() {
+document.addEventListener('DOMContentLoaded', function() {
+  console.log("DOM loaded...")
   document.getElementById('save').addEventListener('click', save);
   function save() {
     // Save popup.html input
-    var userId = document.getElementById('userId').value;
+    console.log('Settings Saved!')
+    var userId = document.getElementById('user-id').value;
     chrome.storage.local.set({'userId': userId}, function() {
       console.log("Settings saved. UserID = " + userId);
     });
