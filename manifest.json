@@ -1,0 +1,20 @@
+{
+  "name": "Split Injector",
+  "description": "Debug/Demo Tool",
+  "version": "1.0",
+  "manifest_version": 1,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/splitiologo.png"
+    }
+  },
+  "icons": {
+    "16": "/images/splitiologo.png"
+  },
+  "options_page": "options.html"
+}
