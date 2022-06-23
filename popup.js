@@ -1,22 +1,5 @@
 document.addEventListener('load', function() {
   document.getElementById('save').addEventListener('click', save);
-  // grab local settings from popup.html
-  // chrome.storage.local.get(null,function(storage) {
-  //   // console.debug("clientId = " + storage.clientId);
-  //   // document.getElementById('sdk-key').value = storage.clientKey;
-
-  //   // // console.debug("userKey = " + storage.userID);
-  //   // document.getElementById('userId').value = storage.userKey;
-
-  //   // // console.debug("flagKey = " + storage.flagKey);
-  //   // document.getElementById('feature').value = storage.feature;
-
-  //   // // console.debug("enabled = " + storage.enabled);
-  //   // document.getElementById('extension').checked = storage.extension;
-
-  //   // document.getElementById('object').value = storage.objectId;
-
-  // });
   function save() {
     // Save popup.html input
     var userId = document.getElementById('userId').value;
